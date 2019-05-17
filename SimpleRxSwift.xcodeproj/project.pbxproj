@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91D0FB99BAE15FCA3F649C84 /* Pods_SimpleRxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 053C4B7737C07CD1096EA65B /* Pods_SimpleRxSwift.framework */; };
 		986DAA53228D449600E46965 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986DAA52228D449600E46965 /* AppDelegate.swift */; };
 		986DAA55228D449600E46965 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986DAA54228D449600E46965 /* ViewController.swift */; };
 		986DAA58228D449600E46965 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986DAA56228D449600E46965 /* Main.storyboard */; };
 		986DAA5A228D449A00E46965 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986DAA59228D449A00E46965 /* Assets.xcassets */; };
 		986DAA5D228D449A00E46965 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986DAA5B228D449A00E46965 /* LaunchScreen.storyboard */; };
+		986DAA65228D469B00E46965 /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986DAA64228D469B00E46965 /* FormVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		053C4B7737C07CD1096EA65B /* Pods_SimpleRxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleRxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DC181B522C362F7FF9244E /* Pods-SimpleRxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRxSwift.debug.xcconfig"; path = "Target Support Files/Pods-SimpleRxSwift/Pods-SimpleRxSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		77656DE040B3C81CFB548663 /* Pods-SimpleRxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleRxSwift.release.xcconfig"; path = "Target Support Files/Pods-SimpleRxSwift/Pods-SimpleRxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		986DAA4F228D449600E46965 /* SimpleRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		986DAA52228D449600E46965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		986DAA54228D449600E46965 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		986DAA59228D449A00E46965 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		986DAA5C228D449A00E46965 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		986DAA5E228D449A00E46965 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986DAA64228D469B00E46965 /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D0FB99BAE15FCA3F649C84 /* Pods_SimpleRxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB001E9C5F09DE467D00804 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				053C4B7737C07CD1096EA65B /* Pods_SimpleRxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51CE2BCF9120A8FBEA85A75F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57DC181B522C362F7FF9244E /* Pods-SimpleRxSwift.debug.xcconfig */,
+				77656DE040B3C81CFB548663 /* Pods-SimpleRxSwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		986DAA46228D449500E46965 = {
 			isa = PBXGroup;
 			children = (
 				986DAA51228D449600E46965 /* SimpleRxSwift */,
 				986DAA50228D449600E46965 /* Products */,
+				51CE2BCF9120A8FBEA85A75F /* Pods */,
+				0BB001E9C5F09DE467D00804 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				986DAA59228D449A00E46965 /* Assets.xcassets */,
 				986DAA5B228D449A00E46965 /* LaunchScreen.storyboard */,
 				986DAA5E228D449A00E46965 /* Info.plist */,
+				986DAA64228D469B00E46965 /* FormVC.swift */,
 			);
 			path = SimpleRxSwift;
 			sourceTree = "<group>";
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 986DAA61228D449A00E46965 /* Build configuration list for PBXNativeTarget "SimpleRxSwift" */;
 			buildPhases = (
+				4D9CD9DE90B3D3B800FAB54B /* [CP] Check Pods Manifest.lock */,
 				986DAA4B228D449500E46965 /* Sources */,
 				986DAA4C228D449500E46965 /* Frameworks */,
 				986DAA4D228D449500E46965 /* Resources */,
+				DA4216CD110F87AF5D4B7AA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +159,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D9CD9DE90B3D3B800FAB54B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleRxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA4216CD110F87AF5D4B7AA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleRxSwift/Pods-SimpleRxSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleRxSwift/Pods-SimpleRxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		986DAA4B228D449500E46965 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +213,7 @@
 			files = (
 				986DAA55228D449600E46965 /* ViewController.swift in Sources */,
 				986DAA53228D449600E46965 /* AppDelegate.swift in Sources */,
+				986DAA65228D469B00E46965 /* FormVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +357,7 @@
 		};
 		986DAA62228D449A00E46965 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57DC181B522C362F7FF9244E /* Pods-SimpleRxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		986DAA63228D449A00E46965 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77656DE040B3C81CFB548663 /* Pods-SimpleRxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
